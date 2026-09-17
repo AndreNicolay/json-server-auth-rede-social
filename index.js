@@ -14,7 +14,7 @@ const middlewares = jsonServer.defaults()
 // liberamos edição também via PATCH no front usando o token do dono do like
 // -- ver observação no README sobre isso).
 const rules = auth.rewriter({
-  posts: 660
+  posts: 664
 })
 
 app.db = router.db

@@ -28,11 +28,3 @@ Em toda requisição protegida, mandar o header:
 Authorization: Bearer SEU_TOKEN_AQUI
 ```
 
-## Observação sobre os likes
-
-Como a regra `660` só deixa o **dono** do post fazer PATCH nele, e qualquer
-usuário logado precisa poder curtir posts dos outros, se isso der erro 401 no
-teste de vocês, troquem a regra no `index.js` de `posts: 660` para
-`posts: 664` (todo mundo logado pode ler e escrever, só quem não tá logado
-fica de fora). Deixem essa troca registrada no commit para o professor ver
-que entenderam o porquê.
