@@ -7,6 +7,14 @@
       "username": "AndreNicolay",
       "avatar": "https://i.pravatar.cc/150?u=AndreNicolay",
       "id": 1
+    },
+    {
+      "email": "anderson@gmail.com",
+      "password": "$2a$10$Xeq2c6R4pWeuKpV3F1qHze4R44wwXsSxc1CUUbpf28BduAY5QrW.u",
+      "name": "Anderson Kellerman",
+      "username": "Anderson-1",
+      "avatar": "https://i.pravatar.cc/150?u=Anderson-1",
+      "id": 2
     }
   ],
   "posts": [
