@@ -45,5 +45,35 @@
         }
       ]
     }
+  ],
+  "messages": [
+    {
+      "senderId": 1,
+      "receiverId": 2,
+      "text": "teste",
+      "createdAt": "2026-09-18T22:51:30.684Z",
+      "id": 1
+    },
+    {
+      "senderId": 1,
+      "receiverId": 2,
+      "text": "teste mensagem direct",
+      "createdAt": "2026-09-18T22:51:45.372Z",
+      "id": 2
+    },
+    {
+      "senderId": 1,
+      "receiverId": 2,
+      "text": "jvoduivinsdf",
+      "createdAt": "2026-09-18T22:51:49.388Z",
+      "id": 3
+    },
+    {
+      "senderId": 2,
+      "receiverId": 1,
+      "text": "aham é us guri",
+      "createdAt": "2026-09-18T22:53:52.072Z",
+      "id": 4
+    }
   ]
 }
