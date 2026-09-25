@@ -23,6 +23,12 @@ app.use(rules)
 app.use(auth)
 app.use(router)
 
-app.listen(3000, () => {
-  console.log('Servidor rodando em http://localhost:3000')
-})
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});
+// Direcionamento de porta para servidor online
+setinterval(() => {
+console.log('Servidor rodando na porta 3000');
+}, 30000);
