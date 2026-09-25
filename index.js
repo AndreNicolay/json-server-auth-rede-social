@@ -30,9 +30,5 @@ app.listen(PORT, () => {
 });
 // Direcionamento de porta para servidor online
 setInterval(() => {
-<<<<<<< HEAD
   console.log('Servidor rodando na porta 3000');
-=======
-console.log('Servidor rodando na porta 3000');
->>>>>>> 9158e8a044a063ac9276e1836f496d267c23a6da
 }, 30000);
