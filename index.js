@@ -47,14 +47,15 @@ app.get('/chat/:outroId', (req, res) => {
   const outroId = String(req.params.outroId)
   const mensagens = app.db
     .get('messages')
-    .filter(m =>
-      (String(m.userId) === meuId && String(m.paraId) === outroId) ||
-      (String(m.userId) === outroId && String(m.paraId) === meuId)
-    )
+   .filter(m => {
+    const de = String(m.userId ?? m.senderId)
+    const para = String(m.paraId ?? m.receiverId)
+    return (de === meuId && para === outroId) || (de === outroId && para === meuId)
+    })
     .sortBy('criadaEm')
     .value()
 
-  res.json(mensagens)
+    res.json(mensagens)
 })
 
 app.use(router)
